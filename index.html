@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="email-generator-container">
+        <h2>Email Generator</h2>
+        <form id="emailForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="middleName">Middle Name (optional):</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="domain">Email Domain:</label>
+                <input type="text" id="domain" name="domain" placeholder="example.com" required>
+            </div>
+            <button type="submit">Generate Emails</button>
+            <p id="email-output" class="email-output"></p>
+        </form>
+    </div>
+    <script src="email_generator.js"></script>
+</body>
+</html>

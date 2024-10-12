@@ -1,52 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Format Generator</title>
+    <title>Email Formatter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
         }
-        li {
-            padding: 5px 0;
-        }
-        input {
-            padding: 8px;
-            margin: 5px;
-        }
-        button {
-            padding: 8px 12px;
-            margin: 5px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
+        .output {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Email Address Formatter</h1>
+        <form id="email-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br><br>
 
-    <h1>Email Format Generator</h1>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br><br>
 
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" placeholder="Enter First Name">
+            <label for="domain">Company Domain:</label>
+            <input type="text" id="domain" name="domain" required placeholder="example.com"><br><br>
 
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" placeholder="Enter Last Name">
+            <button type="button" onclick="generateEmails()">Generate Emails</button>
+        </form>
 
-    <button id="generateButton">Generate Emails</button>
+        <div class="output" id="output"></div>
+    </div>
 
-    <ul id="emailList">
-        <!-- Generated email formats will appear here -->
-    </ul>
-
-    <script src="emailFormats.js"></script> <!-- Link to the JavaScript code -->
-    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Format Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Email Format Generator</h1>
+
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" placeholder="Enter First Name">
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" placeholder="Enter Last Name">
+
+    <button id="generateButton">Generate Emails</button>
+
+    <ul id="emailList">
+        <!-- Generated email formats will appear here -->
+    </ul>
+
+    <script src="emailFormats.js"></script> <!-- Link to the JavaScript code -->
+    
+</body>
+</html>

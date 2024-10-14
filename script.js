@@ -14,7 +14,7 @@ function generateEmails() {
             "First Name + Last Initial + Domain": `${firstName}${lastName[0]}@${domain}`,
             "Last Name + First Initial + Domain": `${lastName}${firstName[0]}@${domain}`,
             "First Name + Dot + Middle Initial + Dot + Last Name + Domain": `${firstName}.${firstName[0]}.${lastName}@${domain}`,
-            "First Name + Dash + Last Name + Domain": `${firstname}-${lastname}@${domain}`,
+          
            
         };
 
